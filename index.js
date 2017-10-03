@@ -22,10 +22,10 @@ function currentLine( line ) {
     // returns "The line is currently empty." if no one is in line
     return `The line is currently empty.`;
   } else {
-    // If there is one person in line, "saysWho" will only be the first "line" item
+    // If there is only one person in line, "saysWho" will only be the first name in "line"
     var saysWho = `The line is currently: 1. ${line[0]}`;
     // for loop to iterate through "line" if it's length is more than 1
-    for ( var i = 1; i < line.length; i++ ) {
+    for ( var i = 1; i =< line.length; i++ ) {
       // adds current index of "line" + 1 (to return correct number since arrays are zero-indexed) and current "line" name to "saysWho" for each person in "line"
       saysWho += `, ${i + 1}. ${line[i]}`;
     }
