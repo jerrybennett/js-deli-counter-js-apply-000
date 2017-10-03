@@ -1,4 +1,4 @@
 function takeANumber( katzDeliLine, name ) {
-  var arr = [];
+  //adds person to end of katzDeliLine array
   katzDeliLine.push(name)
 }
