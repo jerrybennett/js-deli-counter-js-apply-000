@@ -12,6 +12,6 @@ function nowServing( katzDeliLine ) {
     // returns the line is empty when no one is on line
     return `There is nobody waiting to be served!`
   } else {
-    return `Currently serving ${katzDeliLine.shift()}`
+    return `Currently serving ${katzDeliLine.shift()}.`
   }
 }
