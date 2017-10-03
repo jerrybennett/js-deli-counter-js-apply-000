@@ -26,7 +26,7 @@ function currentLine( line ) {
     var saysWho = `The line is currently: 1. ${line[0]}`;
     // for loop to iterate through "line" if it's length is more than 1
     for ( var i = 1; i < line.length; i++ ) {
-      // adds current index of "line" + 1 (to return correct number since arrays are 0 based) and current line name to "saysWho" for each item (i) in "line"
+      // adds current index of "line" + 1 (to return correct number since arrays are zero-indexed) and current "line" name to "saysWho" for each person in "line"
       saysWho += `, ${i + 1}. ${line[i]}`;
     }
     return saysWho;
