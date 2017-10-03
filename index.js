@@ -9,7 +9,9 @@ function takeANumber( katzDeliLine, name ) {
 
 function nowServing( katzDeliLine ) {
   if( katzDeliLine.length === 0 ) {
-    
+    // returns the line is empty when no one is on line
     return `There is nobody waiting to be served!`
+  } else {
+    return `Currently serving ${katzDeliLine.shift()}`
   }
 }
